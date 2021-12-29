@@ -53,5 +53,11 @@
     "FileReader": true,
     "Blob": true,
     "navigator": true
-  }
+  },
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
 }

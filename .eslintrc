@@ -39,6 +39,7 @@
     "prettier"
   ],
   "rules": {
+    
     "react/jsx-filename-extension": [
       1,
       {
@@ -54,7 +55,9 @@
     "no-console": "off",
     "react/prop-types": 0,
     "prettier/prettier": [
-      "warn"
+      ["error",{
+      "endOfLine": "auto"}
+    ]
     ]
   },
   "globals": {

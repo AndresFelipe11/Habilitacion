@@ -6,7 +6,7 @@ import Breadcrumb from 'containers/navs/Breadcrumb';
 
 const Start = ({ match }) => (
   <>
-  <h3>Aqu estoy start!!!</h3>
+    <h3>Aqu estoy start!!!</h3>
     <Row>
       <Colxx xxs="12">
         <Breadcrumb heading="menu.start" match={match} />

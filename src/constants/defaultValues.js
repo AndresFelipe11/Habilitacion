@@ -60,4 +60,4 @@ export const colors = [
   'greysteel',
 ];
 
-export const urlBase = "http://localhost:5000"
+export const urlBase = 'http://localhost:5000';

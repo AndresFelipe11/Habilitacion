@@ -21,7 +21,7 @@ import {
   resetPasswordError,
 } from './actions';
 
-import login from '../../services/login'
+import login from '../../services/login';
 
 export function* watchLoginUser() {
   // eslint-disable-next-line no-use-before-define
@@ -32,13 +32,13 @@ const loginWithEmailPasswordAsync = async (email, password) => {
   // eslint-disable-next-line no-return-await
   const body = {
     username: email,
-    password
-  }
+    password,
+  };
 
-  return login(body)    
+  return login(body)
     .then((user) => user)
     .catch((error) => error);
-}
+};
   
 
 function* loginWithEmailPassword({ payload }) {
@@ -47,14 +47,13 @@ function* loginWithEmailPassword({ payload }) {
   try {
     const loginUser = yield call(loginWithEmailPasswordAsync, email, password);
     if (!loginUser.message) {
-      console.log(loginUser)      
-      const item = {         
+      console.log(loginUser);
+      const item = {
         id: loginUser.data.user.id,
         nombre: loginUser.data.user.nombre,
         apellido: loginUser.data.user.apellido,
         role: 0,
-        token: loginUser.data.token
-        
+        token: loginUser.data.token,
       };
       setCurrentUser(item);
       yield put(loginUserSuccess(item));

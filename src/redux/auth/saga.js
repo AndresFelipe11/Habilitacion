@@ -39,7 +39,6 @@ const loginWithEmailPasswordAsync = async (email, password) => {
     .then((user) => user)
     .catch((error) => error);
 };
-  
 
 function* loginWithEmailPassword({ payload }) {
   const { email, password } = payload.user;

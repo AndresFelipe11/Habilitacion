@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {urlBase} from '../constants/defaultValues';
+import { urlBase } from '../constants/defaultValues';
 
 const baseUrl = urlBase;
 

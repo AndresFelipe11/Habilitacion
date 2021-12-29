@@ -1,9 +1,3 @@
 {
-    "singleQuote": true,
-    "prettier/prettier": [
-      "error",
-      {
-        "endOfLine": "auto"
-      }
-    ]
+    "singleQuote": true
 }
